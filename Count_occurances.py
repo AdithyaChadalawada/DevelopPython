@@ -5,7 +5,6 @@ def word_count(string):
 
         for word in line:
                 if word in number:
-                        print "number is %s"%(number)
                         number[word] += 1
                 else:
                         number[word] = 1
@@ -14,3 +13,16 @@ def word_count(string):
 
 
 print word_count('adi adi adi is great')
+
+
+def word_count(string):
+                number={}
+                line = string.split()
+                for i in line:
+                        count = line.count(i)
+                        number[i] = count
+                print number        
+          return number
+
+
+
